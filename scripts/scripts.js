@@ -34,7 +34,7 @@ function recalculate(){
     } else if (modelName === "CPRG"){
         totalCost = duration * 213;
     }
-    costLabel.innerHTML = totalCost
+    costLabel.innerHTML = totalCost;
 }
 
 /****************** model button logic ******************/
@@ -57,7 +57,7 @@ function changeModel(){
     
     if (modelName ==="XYZ"){
         modelName = "CPRG";
-        modelText.innerHTML = "Model CPRG"
+        modelText.innerHTML = "Model CPRG";
     } else if (modelName === "CPRG"){
         modelName = "XYZ";
         modelText.innerHTML = "Model XYZ";}
@@ -86,7 +86,7 @@ function changeDuration(){
     let newDuration = prompt("Enter new duration");
 
     duration = parseInt(newDuration);
-    durationText.innerHTML = duration
+    durationText.innerHTML = duration;
 
     recalculate();
 }
